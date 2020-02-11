@@ -31,5 +31,10 @@ class MainActivity : AppCompatActivity() {
                 RecyclerViewAcitivity::class.java)
             startActivity(intent)
         }
+        button3.setOnClickListener {
+            var intent=Intent(this,
+                Main2Activity::class.java)
+            startActivity(intent)
+        }
     }
 }

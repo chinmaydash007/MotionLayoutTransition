@@ -1,7 +1,8 @@
-package com.example.motionlayoutkotlin
+package com.example.motionlayoutkotlin.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.motionlayoutkotlin.R
 
 class Main2Activity : AppCompatActivity() {
 
