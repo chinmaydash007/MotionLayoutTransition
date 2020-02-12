@@ -2,9 +2,9 @@ package com.example.motionlayoutkotlin.Activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.motionlayoutkotlin.R
+import com.example.motionlayoutkotlin.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
 
             var message:String=editText.text.toString()
-            Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
+            this.showToast(message)
             var intent=Intent().apply {
                 action=Intent.ACTION_SEND
                 putExtra(Intent.EXTRA_TEXT,"sdfsdf")

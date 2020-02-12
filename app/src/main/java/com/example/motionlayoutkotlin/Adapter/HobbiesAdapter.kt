@@ -5,10 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.motionlayoutkotlin.R
 import com.example.motionlayoutkotlin.model.Hobbies
+import com.example.motionlayoutkotlin.showToast
 import kotlinx.android.synthetic.main.single_cardview.view.*
 
 class HobbiesAdapter(val context: Context, val list: List<Hobbies>) :
@@ -39,7 +39,7 @@ class HobbiesAdapter(val context: Context, val list: List<Hobbies>) :
 
         init {
             itemView.setOnClickListener({
-                Toast.makeText(context, hobby, Toast.LENGTH_SHORT).show()
+                context.showToast(hobby);
             })
         }
 

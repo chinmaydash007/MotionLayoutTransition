@@ -1,7 +1,7 @@
 package com.example.motionlayoutkotlin.Activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.motionlayoutkotlin.Adapter.HobbiesAdapter
 import com.example.motionlayoutkotlin.R
@@ -13,10 +13,10 @@ class RecyclerViewAcitivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view_acitivity)
-        var layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
-        var hobbiesAdapter:HobbiesAdapter= HobbiesAdapter(this,supplier.hobbies)
-        recyclerView.layoutManager=layoutManager
-        recyclerView.adapter=hobbiesAdapter
+        var layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        var hobbiesAdapter = HobbiesAdapter(this, supplier.hobbies)
+        recyclerView.layoutManager = layoutManager
+        recyclerView.adapter = hobbiesAdapter
 
     }
 }
